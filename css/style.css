@@ -1,0 +1,321 @@
+/* common css start */
+*{
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'open-sans', sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.section_info{
+    text-align: center;
+}
+.section_info h2{
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+}
+.section_info p{
+    font: 16px;
+    color: #7e8287;
+    width: 676px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* common css end*/
+/* nav css start */
+nav{
+    background: #02918b;
+}
+nav .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+nav .logo{
+    display: block;
+    width: 20%;
+}
+nav .logo img{
+    display: block;
+}
+nav .menu{
+    width: 80%;
+}
+nav .menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+li{
+    list-style-type: none;
+}
+nav .menu ul li a{
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 26px 25px;
+    display: inline-block;
+    transition: 0.5s;
+
+}
+nav .menu ul li:hover a{
+    background: red;
+    color: black;
+}
+/* nav css end */
+/* banner css start */
+#banner{
+    background: url(../image/1.png);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+#banner .container{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#banner .banner_content{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    
+
+}
+#banner h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner h1{
+    font-size: 68px;
+    font-weight: 800;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+#banner p{
+    font-size: 18px;
+    font-weight: 400;
+}
+#banner a{
+    color: #000;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: yellow;
+    padding: 19px 42px;
+    display: inline-block;
+}
+#banner img{
+    display: block;
+    margin: 50px auto;
+}
+#banner::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    opacity: 0.66;
+    position: absolute;
+    z-index: -1;
+}
+/* banner css end */
+/* about section css start */
+#about{
+    padding: 99px 0;
+}
+#about .section_info p{
+    width: 874px;
+}
+#about .section_info p b{
+    font-size: 23px;
+    font-weight: 800;
+}
+#about .about_item{
+    width: 25%;
+    text-align: center;
+    padding: 37px 55px;
+    border-right: 1px solid #7e8287;
+    margin-top: 80px;
+}
+#about .about_item:last-child{
+    border-right-color: transparent;
+}
+
+#about .about_item i{
+    font-size: 29px;
+    color: #02918c;
+}
+#about .about_item h3{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    margin: 32px 0;
+}
+#about .about_item p{
+    font-size: 11px;
+    color: #7e8287;
+}
+/* about section css end */
+/* service section css start */
+#service{
+    background-image: url(../image/3.png);
+    background-size: cover;
+    background-position: center;
+    padding: 99px 0;
+}
+#service .service_inner_container{
+    width: 50%;
+}
+#service .section_info{
+    text-align: left;
+}
+
+#service .service_item{
+    width: 50%;
+    padding-right: 125px;
+    margin-top: 55px;
+}
+#service .service_item i{
+    font-size: 30px;
+    color: #02918c;
+}
+#service .service_item h3{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    margin: 20px 0;
+}
+#service .service_item p{
+    font-size: 11px;
+    color: #7e8287;
+    width: 50%;
+}
+/* service section end */
+/* my work css start */
+#my_work .section_info{
+    margin: 80px 0 78px;
+}
+
+#my_work .section_info p{
+    width: 676px;
+}
+#my_work .my_work_item{
+    width: 25%;
+    position: relative;
+}
+#my_work .my_work_item img{
+    display: block;
+    width: 100%;
+}
+#my_work .my_work_item .overlay{
+    position: absolute;
+    top: 0;
+    background-color: rgba(2,145,139, 0.85);
+    color: #fff;
+    top: 20px;
+    left: 28px;
+    right: 28px;
+    bottom: 20px;
+    text-align: center;
+    padding: 60px 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+#my_work .my_work_item:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+}
+#my_work .my_work_item .overlay h4{
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 50px;
+
+}
+#my_work .my_work_item .overlay p{
+    font-size: 13px;
+}
+/* my work section css end */
+/* contac section css start */
+#contac_me .section_info p{
+    width: 676px;
+    line-height: 41px;
+}
+#contac_me .section_info{
+    margin: 80px 0 78px;
+}
+#contac_me .contac_form{
+    background: black;
+    color: #fff;
+    padding: 68px 0;
+}
+#contac_me .contac_form input, 
+#contac_me .contac_form textarea{
+    display: block;
+    margin: auto;
+    text-align: center;
+    background: none;
+    font-size: 16px;
+    font-size: 400;
+    color: #7e8287;
+    padding: 18px;
+    border: none;
+    border-bottom: 1px solid #898989;
+    margin-bottom: 50px;
+}
+#contac_me .contac_form input::placeholder, 
+#contac_me .contac_form textarea::placeholder{
+    text-transform: uppercase
+}
+#contac_me .contac_form textarea{
+    resize: none;
+    font-family: 'open-sans', sans-serif;
+    height: 50px;
+}
+#contac_me .contac_form .sm{
+    width: 637px;
+}
+#contac_me .contac_form .lg{
+    width: 917px;
+}
+#contac_me .contac_form button{
+    color: #000;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: yellow;
+    padding: 19px 42px;
+    cursor: pointer;
+    border: none;
+    display: block;
+    margin: auto;
+}
+/* contac section css end */
+
+footer{
+    text-align: center;
+    font-size: 12px;
+    color: #7e8287;
+    background-color: #000;
+    padding: 20px 0;
+}
